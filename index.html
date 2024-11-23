@@ -47,26 +47,36 @@
 
     </header>
     <div class="stepper-container">
-        <div class="content">
-            <div class="step-content">Contact Details</div>
-            <div class="step-content hidden">Finished</div>
-            <div class="step-content">Shipping Address</div>
-            <div class="step-content">Payment</div>
-            <div class="step-content">Delivered</div>
-
-        </div>
         <div class="details">
-            <p class="step-detail active">Add contact details for further communications.</p>
+            <div class="step-detail active">
+                <form action="">
+                    <h3>Personal info</h3>
+                    <h5 class="grey">Please provide your name, email address, and phone number.</h5>
+                    <div class="personal-info">
+                        <label for="name">Name</label><br>
+                        <input type="text" name="name" id="name" placeholder="e.g. Stephen King">
+                    </div>
+                    <div class="personal-info">
+                        <label for="email">Email Address</label><br>
+                        <input type="email" name="email" id="email" placeholder="e.g. stephenking@lorem.com">
+                    </div>
+                    <div class="personal-info">
+                        <label for="phone">Phone Number</label>
+                        <input type="number" name="phone" id="phone" placeholder="e.g. +1 234 567 890">
+                    </div>
+                </form>
+            </div>
             <p class="step-detail">Add shipping address for successful delivery.</p>
             <p class="step-detail">Complete Payment to complete the order.</p>
             <p class="step-detail">Ready to get delivered!</p>
             <p class="step-detail">Order delivered successfully! 🎉</p>
         </div>
-        <div class="controls">
-            <button id="prev" disabled>Previous</button>
-            <button id="next">Next</button>
-        </div>
     </div>
+    <div class="controls">
+        <button id="prev" disabled>Go Back</button>
+        <button id="next">Next Step</button>
+    </div>
+
     <script type="module" src="app.js"></script>
 </body>
 

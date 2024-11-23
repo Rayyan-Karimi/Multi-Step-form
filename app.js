@@ -46,8 +46,6 @@ function updateSteps() {
 
 function updateLinesForward() {
     console.log("Forw", currentStep);
-    if (currentStep > 0 && currentStep < 4)
-        lines[currentStep - 1].classList.toggle("activated");
 }
 
 function updateLinesBackward() {
