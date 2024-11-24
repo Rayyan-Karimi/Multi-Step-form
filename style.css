@@ -7,7 +7,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color:#edede9;
+    background-color: #edede9;
 }
 
 .header {
@@ -55,7 +55,7 @@ body {
     top: 5.25rem;
     left: 50%;
     transform: translateX(-50%);
-    
+
     box-sizing: border-box;
     width: 340px;
     margin: 1rem auto;
@@ -80,17 +80,23 @@ body {
 
 .step-detail.active {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .controls {
     position: absolute;
     bottom: 0;
+    display: flex;
+    justify-content: space-between;
     background-color: #fff;
     width: 100vw;
+    padding: 1.5rem;
+    margin: 2rem;
 }
+
 .controls button {
-    padding: 10px 20px;
+    padding: 1rem 2rem;
+    font-size: large;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -102,4 +108,10 @@ body {
 .controls button:disabled {
     background: #ddd;
     cursor: not-allowed;
+}
+
+.arcade,
+.advanced,
+.pro {
+    display: flex;
 }
